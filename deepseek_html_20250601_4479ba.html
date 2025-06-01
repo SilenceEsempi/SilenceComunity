@@ -1,0 +1,14 @@
+<div class="header">
+    <div class="logo">SocialApp</div>
+    <div class="nav">
+        <a href="home.php" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+        <a href="create_post.php" class="nav-link"><i class="fas fa-plus"></i> Tambahkan</a>
+        <a href="friends.php" class="nav-link"><i class="fas fa-users"></i> Teman</a>
+        <a href="messages.php" class="nav-link"><i class="fas fa-comments"></i> Chat</a>
+        <a href="#minecraft" class="nav-link"><i class="fas fa-gamepad"></i> Server Minecraft</a>
+    </div>
+    <div class="user-menu">
+        <img src="uploads/<?php echo $_SESSION['profile_pic'] ?? 'default.jpg'; ?>" class="profile-pic-small">
+        <span><?php echo $_SESSION['username']; ?></span>
+    </div>
+</div>
